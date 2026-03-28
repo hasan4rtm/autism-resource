@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Autism Resources for California Families</title>
+  <style>
+    :root{
+      --bg:#0a1020;
+      --panel:#0f1830;
+      --card:#111f3a;
+      --text:#eef3ff;
+      --muted:#c2cceb;
+      --link:#a7c5ff;
+      --accent:#9ff0d8;
+      --border:rgba(255,255,255,.12);
+      --shadow: 0 12px 30px rgba(0,0,0,.28);
+      --radius: 18px;
+      --max: 1100px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: var(--font);
+      background:
+        radial-gradient(900px 520px at 12% 12%, rgba(159,240,216,.16), transparent 60%),
+        radial-gradient(900px 520px at 88% 20%, rgba(167,197,255,.16), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      line-height:1.65;
+    }
+    a{ color: var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .wrap{ max-width: var(--max); margin:0 auto; padding: 28px 18px 70px; }
+
+    .hero{
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(17,31,58,.92), rgba(15,24,48,.92));
+      box-shadow: var(--shadow);
+      padding: 26px 22px;
+    }
+    .hero h1{ margin:0 0 10px; font-size: clamp(1.65rem, 2.9vw, 2.25rem); }
+    .hero p{ margin:0; color: var(--muted); max-width: 78ch; }
+
+    .callout{
+      margin-top: 14px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      padding: 12px 14px;
+      color: var(--muted);
+      font-size: .98rem;
+    }
+    .callout strong{ color: var(--text); }
+
+    .layout{
+      margin-top: 22px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .section{
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.03);
+      padding: 18px;
+    }
+    .section h2{ margin:0 0 10px; font-size: 1.18rem; }
+    .section p{ margin: 0 0 14px; color: var(--muted); }
+
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 980px){
+      .cards{ grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px){
+      .cards{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 10px 22px rgba(0,0,0,.16);
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+      min-height: 140px;
+    }
+    .card h3{ margin:0; font-size: 1.02rem; }
+    .card .desc{ margin:0; color: var(--muted); font-size: .95rem; }
+    .card .actions{ margin-top:auto; display:flex; gap:10px; flex-wrap:wrap; }
+    .btn{
+      display:inline-block;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      font-size:.92rem;
+    }
+    .btn.primary{
+      border-color: rgba(159,240,216,.35);
+      background: rgba(159,240,216,.10);
+      color: var(--text);
+    }
+
+    .disclaimer{
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(0,0,0,.14);
+      padding: 14px 16px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+    .disclaimer strong{ color: var(--text); }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Autism Resources for California Families</h1>
+      <p>
+        If you’re exploring an autism diagnosis, school supports, or services in California, you’re not alone.
+        We’ve gathered trusted starting points below to help you find information and next steps.
+      </p>
+
+      <div class="callout" role="note" aria-label="Urgent help">
+        <strong>Need immediate help?</strong> Call <strong>911</strong> for emergencies.
+        For crisis support, call or text <strong>988</strong>.
+      </div>
+    </header>
+
+    <section class="layout">
+      <section class="section" id="start">
+        <h2>Start Here</h2>
+        <p>
+          When you’re worried about development, it helps to know what screening looks like and where to ask questions.
+          These resources explain common steps families take.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>CDC — Screening &amp; Diagnosis</h3>
+            <p class="desc">A clear overview of screening and how diagnosis is made.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.cdc.gov/autism/diagnosis/index.html" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>CDC — Learn the Signs. Act Early.</h3>
+            <p class="desc">Milestones, tip sheets, and guidance for caregivers.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.cdc.gov/ncbddd/actearly/index.html" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Autism Society</h3>
+            <p class="desc">Support, education, and ways to connect with local communities.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://autismsociety.org/" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="school">
+        <h2>School Supports (IEP / 504)</h2>
+        <p>
+          Many families need help understanding school services and what supports may be available.
+          These links can help you learn the language and find official California information.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>California Department of Education — Special Education</h3>
+            <p class="desc">State overview of special education programs and resources.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.cde.ca.gov/sp/se/" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>OAR — Resources for Educators</h3>
+            <p class="desc">Practical guides and materials for school staff.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://researchautism.org/education/" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Disability Rights California</h3>
+            <p class="desc">Know-your-rights information and advocacy resources in CA.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.disabilityrightsca.org/" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <h2>California Services &amp; Support Programs</h2>
+        <p>
+          California’s system can be hard to navigate—especially when you’re trying to coordinate services.
+          These are common starting points for state and local support.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>California DDS (Developmental Services)</h3>
+            <p class="desc">Information on services and how to connect with your Regional Center.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.dds.ca.gov/" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Regional Centers (via DDS)</h3>
+            <p class="desc">Find your local Regional Center office.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.dds.ca.gov/rc/" target="_blank" rel="noopener">Find your Regional Center</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Autistic Self Advocacy Network (ASAN)</h3>
+            <p class="desc">Self-advocacy resources for autistic people and families.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://autisticadvocacy.org/resources/" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="teen-adult">
+        <h2>Teens &amp; Adults (Transition Planning)</h2>
+        <p>
+          Transition planning can include school-to-work, benefits, healthcare, and independent living.
+          These toolkits are commonly used starting points.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>IACC (HHS) — Transition Toolkits</h3>
+            <p class="desc">A federal hub linking multiple transition planning toolkits.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://iacc.hhs.gov/resources/transition/toolkits/" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Autism Speaks — Transition Tool Kit</h3>
+            <p class="desc">Planning support for employment, housing, and healthcare.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.autismspeaks.org/tool-kit/transition-tool-kit" target="_blank" rel="noopener">Open resource</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Autism Speaks — Tool Kits Library</h3>
+            <p class="desc">Guides for common life situations (sleep, doctor visits, and more).</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.autismspeaks.org/autism-speaks-tool-kits" target="_blank" rel="noopener">Browse toolkits</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="disclaimer">
+          <strong>Important:</strong> This page is for general information only and is not medical or legal advice.
+          Links are provided as a convenience and do not imply endorsement. If you need legal advice about a specific situation,
+          contact a qualified attorney in California.
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
