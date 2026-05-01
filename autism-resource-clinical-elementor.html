@@ -1,0 +1,315 @@
+<!-- Elementor HTML Widget: Autism Resources (Clinical) -->
+<style>
+  .ar-clinical-widget {
+    --bg:#0b1220;
+    --panel:#0f1a2e;
+    --card:#111f3a;
+    --text:#e8eefc;
+    --muted:#b8c4e6;
+    --link:#8fb3ff;
+    --border:rgba(255,255,255,.12);
+    --accent:#7ee0c3;
+    --shadow:0 12px 30px rgba(0,0,0,.28);
+    --radius:18px;
+    --max:1230px;
+    --font:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+    margin:0;
+    font-family:var(--font);
+    color:var(--text);
+    background:
+      radial-gradient(1000px 600px at 10% 10%, rgba(126,224,195,.16), transparent 60%),
+      radial-gradient(900px 600px at 90% 30%, rgba(143,179,255,.14), transparent 55%),
+      var(--bg);
+    line-height:1.6;
+    overflow:hidden;
+  }
+
+  .ar-clinical-widget,
+  .ar-clinical-widget * { box-sizing:border-box; }
+
+  .ar-clinical-widget a { color:var(--link); text-decoration:none; }
+  .ar-clinical-widget a:hover { text-decoration:underline; }
+
+  .ar-clinical-widget .wrap { max-width:var(--max); margin:0 auto; padding:200px 18px 70px; }
+
+  .ar-clinical-widget .hero {
+    background:linear-gradient(135deg, rgba(17,31,58,.95), rgba(15,26,46,.95));
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:26px 22px;
+  }
+
+  .ar-clinical-widget .hero h1 { margin:0 0 8px; font-size:clamp(1.6rem, 2.7vw, 2.2rem); letter-spacing:.2px; }
+  .ar-clinical-widget .hero p { margin:0; color:var(--muted); max-width:75ch; }
+
+  .ar-clinical-widget .notice {
+    margin-top:14px;
+    padding:12px 14px;
+    border-radius:14px;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.04);
+    color:var(--muted);
+    font-size:.95rem;
+  }
+
+  .ar-clinical-widget .notice strong { color:var(--text); }
+
+  .ar-clinical-widget .grid {
+    margin-top:22px;
+    display:grid;
+    grid-template-columns:1.3fr .7fr;
+    gap:18px;
+    align-items:start;
+  }
+
+  @media (max-width:900px) {
+    .ar-clinical-widget .grid { grid-template-columns:1fr; }
+  }
+
+  .ar-clinical-widget .section {
+    background:rgba(255,255,255,.03);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:18px;
+  }
+
+  .ar-clinical-widget .section h2 { margin:0 0 12px; font-size:1.2rem; letter-spacing:.2px; }
+
+  .ar-clinical-widget .cards {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+
+  @media (max-width:700px) {
+    .ar-clinical-widget .cards { grid-template-columns:1fr; }
+  }
+
+  .ar-clinical-widget .card {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:14px 14px 12px;
+    box-shadow:0 10px 22px rgba(0,0,0,.18);
+  }
+
+  .ar-clinical-widget .card h3 { margin:0 0 6px; font-size:1.02rem; }
+  .ar-clinical-widget .card p { margin:0 0 10px; color:var(--muted); font-size:.95rem; }
+
+  .ar-clinical-widget .meta {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    font-size:.9rem;
+    color:var(--muted);
+  }
+
+  .ar-clinical-widget .pill {
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.03);
+    padding:4px 10px;
+    border-radius:999px;
+  }
+
+  .ar-clinical-widget .aside {
+    position:sticky;
+    top:16px;
+    background:rgba(255,255,255,.03);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:16px;
+  }
+
+  .ar-clinical-widget .aside h2 { margin:0 0 10px; font-size:1.1rem; }
+  .ar-clinical-widget .aside ul { margin:0; padding-left:18px; color:var(--muted); }
+  .ar-clinical-widget .aside li { margin:7px 0; }
+
+  .ar-clinical-widget .footer-note {
+    margin-top:18px;
+    color:var(--muted);
+    font-size:.92rem;
+    padding:14px 16px;
+    border-radius:14px;
+    border:1px solid var(--border);
+    background:rgba(0,0,0,.15);
+  }
+
+  .ar-clinical-widget .footer-note strong { color:var(--text); }
+
+  .ar-clinical-widget .divider { height:1px; background:var(--border); margin:14px 0; }
+</style>
+
+<div class="ar-clinical-widget" role="region" aria-label="Autism resources clinical view for California">
+  <main class="wrap">
+    <header class="hero">
+      <h1>Autism Resources (California)</h1>
+      <p>
+        This page provides a curated, non-exhaustive list of reputable autism resources for California families,
+        caregivers, and educators. Content is informational and is not medical or legal advice.
+      </p>
+
+      <div class="notice" role="note" aria-label="Crisis notice">
+        <strong>Urgent help:</strong> If you or someone you know is in immediate danger, call <strong>911</strong>.
+        For mental health crisis support, call or text <strong>988</strong> (U.S. Suicide &amp; Crisis Lifeline).
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Resource content">
+      <div>
+        <section class="section" id="ar-clinical-getting-started">
+          <h2>Getting Started (Screening &amp; Diagnosis)</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3>CDC — Autism Screening &amp; Diagnosis</h3>
+              <p>Overview of screening, diagnosis, and early identification.</p>
+              <div class="meta">
+                <span class="pill">Public health</span>
+                <a class="pill" href="https://www.cdc.gov/autism/diagnosis/index.html" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>CDC — Learn the Signs. Act Early.</h3>
+              <p>Milestones and guidance for caregivers and professionals.</p>
+              <div class="meta">
+                <span class="pill">Milestones</span>
+                <a class="pill" href="https://www.cdc.gov/ncbddd/actearly/index.html" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section" id="ar-clinical-education">
+          <h2>Education Supports (IEP/504 &amp; School Services)</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3>OAR — Educator Resources</h3>
+              <p>Research-informed guides and materials for educators and school staff.</p>
+              <div class="meta">
+                <span class="pill">Education</span>
+                <a class="pill" href="https://researchautism.org/education/" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>California Department of Education — Special Education</h3>
+              <p>State-level information on special education programs and supports.</p>
+              <div class="meta">
+                <span class="pill">California</span>
+                <a class="pill" href="https://www.cde.ca.gov/sp/se/" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section" id="ar-clinical-services-ca">
+          <h2>California Services &amp; Regional Support</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3>California Department of Developmental Services (DDS)</h3>
+              <p>Entry point for developmental services; includes regional center information.</p>
+              <div class="meta">
+                <span class="pill">California</span>
+                <a class="pill" href="https://www.dds.ca.gov/" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Disability Rights California</h3>
+              <p>Advocacy and legal rights information for Californians with disabilities.</p>
+              <div class="meta">
+                <span class="pill">California</span>
+                <a class="pill" href="https://www.disabilityrightsca.org/" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section" id="ar-clinical-transition">
+          <h2>Transition to Adulthood</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3>IACC (HHS) — Transition Toolkits</h3>
+              <p>Federal resource hub linking to multiple transition toolkits.</p>
+              <div class="meta">
+                <span class="pill">Transition</span>
+                <a class="pill" href="https://iacc.hhs.gov/resources/transition/toolkits/" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Autism Speaks — Transition Tool Kit</h3>
+              <p>Planning resources for employment, healthcare, and independent living.</p>
+              <div class="meta">
+                <span class="pill">Transition</span>
+                <a class="pill" href="https://www.autismspeaks.org/tool-kit/transition-tool-kit" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section" id="ar-clinical-toolkits">
+          <h2>Practical Toolkits &amp; Guides</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3>Autism Speaks — Tool Kits Library</h3>
+              <p>Topic-specific toolkits (sleep, medical visits, employment, and more).</p>
+              <div class="meta">
+                <span class="pill">Toolkits</span>
+                <a class="pill" href="https://www.autismspeaks.org/autism-speaks-tool-kits" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Autistic Self Advocacy Network (ASAN) — Resources</h3>
+              <p>Self-advocacy resources and policy information.</p>
+              <div class="meta">
+                <span class="pill">Self-advocacy</span>
+                <a class="pill" href="https://autisticadvocacy.org/resources/" target="_blank" rel="noopener">Visit</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="footer-note">
+            <strong>Content note:</strong> Autism resources and community preferences vary. We encourage families to review sources,
+            consult qualified professionals, and choose supports aligned with individual needs and goals.
+          </div>
+        </section>
+      </div>
+
+      <aside class="aside" aria-label="Quick links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#ar-clinical-getting-started">Getting started</a></li>
+          <li><a href="#ar-clinical-education">Education supports</a></li>
+          <li><a href="#ar-clinical-services-ca">California services</a></li>
+          <li><a href="#ar-clinical-transition">Transition to adulthood</a></li>
+          <li><a href="#ar-clinical-toolkits">Toolkits</a></li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2>Legal Disclaimer</h2>
+        <p style="margin:0;color:var(--muted);font-size:.92rem;">
+          This page is for general informational purposes only and does not create an attorney-client relationship.
+          Links are provided as a convenience and do not constitute endorsement.
+        </p>
+      </aside>
+    </section>
+  </main>
+</div>
