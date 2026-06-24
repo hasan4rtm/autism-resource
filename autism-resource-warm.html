@@ -57,6 +57,17 @@
     }
     .callout strong{ color: var(--text); }
 
+    .howto{
+      margin-top: 16px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(255,255,255,.04);
+      padding: 14px 16px;
+    }
+    .howto h2{ margin: 0 0 8px; font-size: 1.02rem; color: var(--text); }
+    .howto ul{ margin: 0; padding-left: 18px; color: var(--muted); }
+    .howto li{ margin: 6px 0; }
+
     .layout{
       margin-top: 22px;
       display:grid;
@@ -69,6 +80,7 @@
       border-radius: var(--radius);
       background: rgba(255,255,255,.03);
       padding: 18px;
+      scroll-margin-top: 100px;
     }
     .section h2{ margin:0 0 10px; font-size: 1.18rem; color: var(--text); }
     .section p{ margin: 0 0 14px; color: var(--muted); }
@@ -140,6 +152,16 @@
         For crisis support, call or text <strong>988</strong>.
       </div>
     </header>
+
+    <section class="howto" aria-label="How to use this page">
+      <h2>How to Use This Page</h2>
+      <ul>
+        <li><a href="#start">Start Here:</a> Learn where to begin after a diagnosis or concern.</li>
+        <li><a href="#school">School Supports:</a> Find California school resources for IEP and 504 planning.</li>
+        <li><a href="#services">Services &amp; Programs:</a> Locate DDS and Regional Center support options.</li>
+        <li><a href="#teen-adult">Teens &amp; Adults:</a> Explore transition planning resources for later stages.</li>
+      </ul>
+    </section>
 
     <section class="layout">
       <section class="section" id="start">
