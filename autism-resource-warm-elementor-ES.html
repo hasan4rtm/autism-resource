@@ -1,0 +1,344 @@
+<!-- Elementor HTML Widget: Autism Resources (Warm) -->
+<style>
+  .ar-warm-widget {
+    --bg:#0a1020;
+    --panel:#0f1830;
+    --card:#111f3a;
+    --text:#eef3ff;
+    --muted:#c2cceb;
+    --link:#a7c5ff;
+    --accent:#9ff0d8;
+    --border:rgba(255,255,255,.12);
+    --shadow:0 12px 30px rgba(0,0,0,.28);
+    --radius:18px;
+    --max:1230px;
+    --font:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+
+    margin:0;
+    font-family:var(--font);
+    background:
+      radial-gradient(900px 520px at 12% 12%, rgba(159,240,216,.16), transparent 60%),
+      radial-gradient(900px 520px at 88% 20%, rgba(167,197,255,.16), transparent 55%),
+      var(--bg);
+    color:var(--text);
+    line-height:1.65;
+    overflow:hidden;
+  }
+
+  .ar-warm-widget,
+  .ar-warm-widget * { box-sizing:border-box; }
+
+  .ar-warm-widget a { color:var(--link); text-decoration:none; }
+  .ar-warm-widget a:hover { text-decoration:underline; }
+
+  .ar-warm-widget .wrap { max-width:var(--max); margin:0 auto; padding:200px 18px 70px; }
+
+  .ar-warm-widget .hero {
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:linear-gradient(135deg, rgba(17,31,58,.92), rgba(15,24,48,.92));
+    box-shadow:var(--shadow);
+    padding:26px 22px;
+  }
+
+  .ar-warm-widget .hero h1 { margin:0 0 10px; font-size:clamp(1.65rem, 2.9vw, 2.25rem); }
+  .ar-warm-widget .hero p { margin:0; color:var(--muted); max-width:78ch; }
+
+  .ar-warm-widget .callout {
+    margin-top:14px;
+    border-radius:16px;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.04);
+    padding:12px 14px;
+    color:var(--muted);
+    font-size:.98rem;
+  }
+
+  .ar-warm-widget .callout strong { color:var(--text); }
+
+  .ar-warm-widget .howto {
+    margin-top:16px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    background:rgba(255,255,255,.04);
+    padding:14px 16px;
+  }
+
+  .ar-warm-widget .howto h2 { margin:0 0 8px; font-size:1.02rem; color:var(--text); }
+  .ar-warm-widget .howto ul { margin:0; padding-left:18px; color:var(--muted); }
+  .ar-warm-widget .howto li { margin:6px 0; }
+
+  .ar-warm-widget .layout {
+    margin-top:22px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .ar-warm-widget .section {
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:rgba(255,255,255,.03);
+    padding:18px;
+    scroll-margin-top:100px;
+  }
+
+  .ar-warm-widget .section h2 { margin:0 0 10px; font-size:1.18rem; color:var(--text);}
+  .ar-warm-widget .section p { margin:0 0 14px; color:var(--muted); }
+
+  .ar-warm-widget .cards {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:12px;
+  }
+
+  @media (max-width:980px) {
+    .ar-warm-widget .cards { grid-template-columns:1fr 1fr; }
+  }
+
+  @media (max-width:640px) {
+    .ar-warm-widget .cards { grid-template-columns:1fr; }
+  }
+
+  .ar-warm-widget .card {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:14px;
+    box-shadow:0 10px 22px rgba(0,0,0,.16);
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    min-height:140px;
+  }
+
+  .ar-warm-widget .card h3 { margin:0; font-size:1.02rem; }
+  .ar-warm-widget .card .desc { margin:0; color:var(--muted); font-size:.95rem; }
+  .ar-warm-widget .card .actions { margin-top:auto; display:flex; gap:10px; flex-wrap:wrap; }
+
+  .ar-warm-widget .btn {
+    display:inline-block;
+    padding:7px 25px;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.03);
+    font-size:.92rem;
+  }
+
+  .ar-warm-widget .btn.primary {
+    border-color:rgba(159,240,216,.35);
+    background:rgba(159,240,216,.10);
+    color:var(--text);
+  }
+
+  .ar-warm-widget .disclaimer {
+    margin-top:10px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    background:rgba(0,0,0,.14);
+    padding:14px 16px;
+    color:var(--muted);
+    font-size:.92rem;
+  }
+
+  .ar-warm-widget .disclaimer strong { color:var(--text); }
+
+  .ar-warm-widget .firm-cta {
+    margin-top:16px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    background:linear-gradient(135deg, rgba(159,240,216,.10), rgba(167,197,255,.10));
+    padding:16px;
+    color:var(--muted);
+  }
+
+  .ar-warm-widget .firm-cta p { margin:0 0 12px; }
+  .ar-warm-widget .firm-cta strong { color:var(--text); }
+</style>
+
+<div class="ar-warm-widget" role="region" aria-label="Recursos de autismo para familias de California">
+  <main class="wrap">
+    <header class="hero">
+      <h1>Recursos de Autismo para Familias de California</h1>
+      <p>
+        Si esta explorando un diagnostico de autismo, apoyos escolares o servicios en California, no esta solo.
+        Reunimos puntos de partida confiables para ayudarle a encontrar informacion y proximos pasos.
+      </p>
+
+      <div class="callout" role="note" aria-label="Ayuda urgente">
+        <strong>Necesita ayuda inmediata?</strong> Llame al <strong>911</strong> para emergencias.
+        Para apoyo en crisis, llame o envie un mensaje de texto al <strong>988</strong>.
+      </div>
+    </header>
+
+    <section class="firm-cta" aria-label="Llamado a la accion de contacto de RTM Law">
+      <p>
+        Si su hijo(a) autista o ser querido sufrio una lesion por negligencia, <strong>RTM Law en Bakersfield</strong> puede ayudar a su familia
+        a navegar el proceso legal con cuidado y teniendo en cuenta la accesibilidad.
+      </p>
+      <a class="btn primary" href="tel:+18557869467">Llame a RTM Law</a>
+    </section>
+
+    <section class="howto" aria-label="Como usar esta pagina">
+      <h2>Como Usar Esta Pagina</h2>
+      <ul>
+        <li><a href="#ar-warm-start">Comience aqui:</a> Vea por donde empezar despues de un diagnostico o una preocupacion.</li>
+        <li><a href="#ar-warm-school">Apoyos escolares:</a> Encuentre recursos de California para planificacion de IEP y 504.</li>
+        <li><a href="#ar-warm-services">Servicios y programas:</a> Ubique opciones de apoyo de DDS y de Centros Regionales.</li>
+        <li><a href="#ar-warm-teen-adult">Adolescentes y adultos:</a> Explore recursos de planificacion para la transicion.</li>
+      </ul>
+    </section>
+
+    <section class="layout">
+      <section class="section" id="ar-warm-start">
+        <h2>Comience Aqui</h2>
+        <p>
+          Cuando hay preocupacion por el desarrollo, ayuda saber como es la deteccion y donde hacer preguntas.
+          Estos recursos explican pasos comunes que toman las familias.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>CDC — Deteccion y Diagnostico</h3>
+            <p class="desc">Una explicacion clara de la deteccion y de como se realiza el diagnostico.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.cdc.gov/autism/diagnosis/index.html" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>CDC — Conozca las senales. Actue temprano.</h3>
+            <p class="desc">Hitos del desarrollo, hojas informativas y orientacion para cuidadores.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.cdc.gov/ncbddd/actearly/index.html" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Autism Society</h3>
+            <p class="desc">Apoyo, educacion y formas de conectarse con comunidades locales.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://autismsociety.org/" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="ar-warm-school">
+        <h2>Apoyos Escolares (IEP / 504)</h2>
+        <p>
+          Muchas familias necesitan ayuda para entender los servicios escolares y los apoyos disponibles.
+          Estos enlaces pueden ayudarle a entender los terminos y encontrar informacion oficial de California.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Departamento de Educacion de California — Educacion Especial</h3>
+            <p class="desc">Panorama estatal de programas y recursos de educacion especial.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.cde.ca.gov/sp/se/" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>OAR — Recursos para Educadores</h3>
+            <p class="desc">Guias practicas y materiales para el personal escolar.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://researchautism.org/education/" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Disability Rights California</h3>
+            <p class="desc">Informacion sobre sus derechos y recursos de defensa en California.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.disabilityrightsca.org/" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="ar-warm-services">
+        <h2>Servicios y Programas de Apoyo en California</h2>
+        <p>
+          El sistema de California puede ser dificil de navegar, especialmente cuando esta coordinando servicios.
+          Estos son puntos de partida comunes para obtener apoyo estatal y local.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>DDS de California (Servicios del Desarrollo)</h3>
+            <p class="desc">Informacion sobre servicios y como conectarse con su Centro Regional.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.dds.ca.gov/" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Centros Regionales (por medio de DDS)</h3>
+            <p class="desc">Encuentre la oficina de su Centro Regional local.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.dds.ca.gov/rc/" target="_blank" rel="noopener">Encuentre su Centro Regional</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Autistic Self Advocacy Network (ASAN)</h3>
+            <p class="desc">Recursos de autodefensa para personas autistas y sus familias.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://autisticadvocacy.org/resources/" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="ar-warm-teen-adult">
+        <h2>Adolescentes y Adultos (Planificacion de Transicion)</h2>
+        <p>
+          La planificacion de transicion puede incluir escuela al trabajo, beneficios, atencion medica y vida independiente.
+          Estas guias son puntos de partida que se usan con frecuencia.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>IACC (HHS) — Guias de Transicion</h3>
+            <p class="desc">Un portal federal que enlaza multiples guias para planificar la transicion.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://iacc.hhs.gov/resources/transition/toolkits/" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Autism Speaks — Guia de Transicion</h3>
+            <p class="desc">Apoyo de planificacion para empleo, vivienda y atencion medica.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.autismspeaks.org/tool-kit/transition-tool-kit" target="_blank" rel="noopener">Abrir recurso</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Autism Speaks — Biblioteca de Guias</h3>
+            <p class="desc">Guias para situaciones comunes de la vida (sueno, visitas medicas y mas).</p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.autismspeaks.org/autism-speaks-tool-kits" target="_blank" rel="noopener">Ver guias</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="disclaimer">
+          <strong>Importante:</strong> Esta pagina es solo para informacion general y no constituye asesoria medica ni legal.
+          Los enlaces se brindan para su conveniencia y no implican respaldo. Si necesita asesoria legal sobre una situacion especifica,
+          comuniquese con un abogado calificado en California.
+        </div>
+      </section>
+    </section>
+
+    <section class="firm-cta" aria-label="Llamado a la accion de contacto de RTM Law">
+      <p>
+        Si su hijo(a) autista o ser querido sufrio una lesion por negligencia, <strong>RTM Law en Bakersfield</strong> puede ayudar a su familia
+        a navegar el proceso legal con cuidado y teniendo en cuenta la accesibilidad.
+      </p>
+      <a class="btn primary" href="tel:+18557869467">Llame a RTM Law</a>
+    </section>
+  </main>
+</div>
